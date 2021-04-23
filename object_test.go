@@ -40,6 +40,28 @@ var schemaCases = []struct {
 		},
 	},
 	{
+		name:   "string: enum",
+		schema: ojsonschema.String{Enum: ojson.Array{"one", "two", "three"}},
+		validationCases: []validationCase{
+			{
+				name:     "valid value",
+				actual:   "three",
+				expected: []jsonschema.KeyError{},
+			},
+			{
+				name:   "invalid value",
+				actual: "four",
+				expected: []jsonschema.KeyError{
+					{
+						PropertyPath: "/",
+						InvalidValue: "four",
+						Message:      `should be one of ["one", "two", "three"]`,
+					},
+				},
+			},
+		},
+	},
+	{
 		name: "object: single required field, no additional properties",
 		schema: ojsonschema.Object{
 			AdditionalProperties: false,
@@ -69,6 +91,28 @@ var schemaCases = []struct {
 						Message:      "additional properties are not allowed",
 					},
 				},
+			},
+		},
+	},
+	{
+		name: "const",
+		schema: ojsonschema.Const("hello"),
+		validationCases: []validationCase{
+			{
+				name: "valid value",
+				expected: []jsonschema.KeyError{},
+				actual: "hello",
+			},
+			{
+				name: "invalid value",
+				expected: []jsonschema.KeyError{
+					{
+						PropertyPath: "/",
+						InvalidValue: "sup",
+						Message:      `must equal "hello"`,
+					},
+				},
+				actual: "sup",
 			},
 		},
 	},
