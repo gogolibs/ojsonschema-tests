@@ -1,13 +1,9 @@
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/gogolibs/ojson v0.0.0-20210423100730-fbedf322930c h1:q7xpZym4NShq0x0vTlxOugdSHMsHVMtl+4+39M/hz3o=
-github.com/gogolibs/ojson v0.0.0-20210423100730-fbedf322930c/go.mod h1:KyQXjy1DEDAegjHuot4YQ21QfToyfaXLE8RwY5YkQ/M=
-github.com/gogolibs/ojson v0.1.0 h1:YdgxAdQSW9n8pwUfgxSvprhExO4vBmZwD/ApDIH4634=
-github.com/gogolibs/ojson v0.1.0/go.mod h1:KyQXjy1DEDAegjHuot4YQ21QfToyfaXLE8RwY5YkQ/M=
-github.com/gogolibs/ojsonschema v0.0.0-20210423101119-e238d8e4fd47 h1:uZludbSOzJz4ZBCEi7dlI3uUofGj8VVQQj0hEUvhBgs=
-github.com/gogolibs/ojsonschema v0.0.0-20210423101119-e238d8e4fd47/go.mod h1:bCb33QJC4GFM7sLvkLh1iu4VGVzRzB1rrIsLfwLuFDU=
-github.com/gogolibs/ojsonschema v0.1.0 h1:snppK+XU1MNO/IhMPIl75BhjOyO1Pqf0jHoqQrsquuI=
-github.com/gogolibs/ojsonschema v0.1.0/go.mod h1:/0i4yfIYXaZHpcp2NsYSz/PfNOCQlHd37Vb+2BjMrvc=
+github.com/gogolibs/ojson v0.3.0 h1:7tUrud5WM6DLi0dJ8iRC9kv24oLSb1o8bsdzz1H79rQ=
+github.com/gogolibs/ojson v0.3.0/go.mod h1:KyQXjy1DEDAegjHuot4YQ21QfToyfaXLE8RwY5YkQ/M=
+github.com/gogolibs/ojsonschema v0.1.2 h1:tSZsVDSNRjeafUixG2nTSV2hrGfqs+MttuN0KaM/jzA=
+github.com/gogolibs/ojsonschema v0.1.2/go.mod h1:je3Kq/R18Rdm87JDRU58wz/rlITsx7IC/weUqa3dtEU=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/qri-io/jsonpointer v0.1.1 h1:prVZBZLL6TW5vsSB9fFHFAMBLI4b0ri5vribQlTJiBA=
